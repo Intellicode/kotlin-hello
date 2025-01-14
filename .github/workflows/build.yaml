@@ -35,3 +35,9 @@ jobs:
 
     - name: Run tests
       run: mvn test
+
+    - name: Package
+      run: mvn package
+
+    - name: Docker
+      run: docker build -t intellicode/kotlin-hello .
